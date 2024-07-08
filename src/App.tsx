@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import styled from 'styled-components';
 
@@ -82,9 +82,11 @@ const App: React.FC = () => {
           <Home submitted={submitted} onSubmit={handleSubmit} onReset={handleReset} question={question} />
         </Header>
         <Content>
-          <Routes>
-            <Route path="/" element={<Home submitted={submitted} onSubmit={handleSubmit} onReset={handleReset} question={question} />} />
-          </Routes>
+          <Switch>
+            <Route path="/" exact>
+              <Home submitted={submitted} onSubmit={handleSubmit} onReset={handleReset} question={question} />
+            </Route>
+          </Switch>
         </Content>
         <Footer>
           <Btn onClick={handleSupportClick}>후원하기</Btn>
