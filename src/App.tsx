@@ -34,7 +34,7 @@ const Footer = styled.footer`
   padding: 10px;
   text-align: center;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 18px;
+  font-size: 16px;
 
   @media (max-width: 600px) {
     font-size: 14px;
@@ -60,14 +60,14 @@ const Btn = styled.button`
   cursor: pointer;
   transition: background 0.3s;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 
   &:hover {
     background: #001f3f;
   }
 
   @media (max-width: 600px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 

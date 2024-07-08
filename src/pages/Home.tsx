@@ -46,7 +46,7 @@ const Home: React.FC<HomeProps> = ({ submitted, onSubmit, onReset, question }) =
       <FormContainer>
         <ConcernForm onSubmit={onSubmit} onReset={onReset} disabled={submitted} question={question} />
       </FormContainer>
-      {submitted && <Message>카드를 1장을 2번 클릭하세요</Message>}
+      {submitted && <Message>카드 1장 2번 클릭 = 필구의 답변</Message>}
       {submitted && <CardGrid />}
     </Container>
   );
