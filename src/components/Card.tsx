@@ -71,16 +71,19 @@ const CardFace = styled.div<{ front?: boolean }>`
 
 const Logo = styled.img`
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 50px;
-  height: 50px;
+  right: 80px;
+  bottom: 3px;
+  margin-bottom: -20px;
+  width: 120px;
+  height: 120px;
 `;
 
 const TextContainer = styled.div`
+  position: absolute;
+  top: 10px;
   width: 60%;
   font-weight: bold;
-`;
+  `;
 
 const Card: React.FC<CardProps> = ({ text, onClick, flipped, selected }) => {
   return (
