@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import styled from 'styled-components';
 
@@ -42,7 +42,7 @@ const Content = styled.div`
 const Btn = styled.button`
   height: 40px;
   width: 125px;
-  margin : 0px 5px;
+  margin: 0px 5px;
   background: #001f3f;
   color: white;
   border: none;
