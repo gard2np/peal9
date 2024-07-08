@@ -29,12 +29,24 @@ const FormContainer = styled.div`
   }
 `;
 
+const Message = styled.div`
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+`;
+
 const Home: React.FC<HomeProps> = ({ submitted, onSubmit, onReset, question }) => {
   return (
     <Container>
       <FormContainer>
         <ConcernForm onSubmit={onSubmit} onReset={onReset} disabled={submitted} question={question} />
       </FormContainer>
+      {submitted && <Message>카드를 1장을 2번 클릭하세요</Message>}
       {submitted && <CardGrid />}
     </Container>
   );

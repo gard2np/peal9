@@ -14,11 +14,19 @@ interface ConcernFormProps {
 }
 
 const BtnContainer = styled.div`
+  display: block;
+  flex-direction: column;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 
   @media (min-width: 600px) {
@@ -28,22 +36,24 @@ const Form = styled.form`
 
 const Input = styled.input`
   padding: 10px;
-  width: 300px;
+  width: 320px;
   margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
 
   @media (max-width: 600px) {
     margin-right: 0;
     margin-bottom: 10px;
+    font-size: 18px;
   }
 `;
 
 const Button = styled.button`
   height: 40px;
   width: 125px;
-  margin : 0px 5px;
+  margin: 0 5px;
   background: #001f3f;
   color: white;
   border: none;
@@ -51,6 +61,7 @@ const Button = styled.button`
   cursor: pointer;
   transition: background 0.3s;
   font-weight: bold;
+  font-size: 18px;
 
   &:hover {
     background: #004080;
@@ -59,6 +70,10 @@ const Button = styled.button`
   &:disabled {
     background: #ccc;
     cursor: not-allowed;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
   }
 `;
 
