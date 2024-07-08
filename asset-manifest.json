@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/peal9/static/css/main.ddcbd0a6.css",
-    "main.js": "/peal9/static/js/main.f266384f.js",
+    "main.js": "/peal9/static/js/main.7f26f8b5.js",
     "index.html": "/peal9/index.html",
     "main.ddcbd0a6.css.map": "/peal9/static/css/main.ddcbd0a6.css.map",
-    "main.f266384f.js.map": "/peal9/static/js/main.f266384f.js.map"
+    "main.7f26f8b5.js.map": "/peal9/static/js/main.7f26f8b5.js.map"
   },
   "entrypoints": [
     "static/css/main.ddcbd0a6.css",
-    "static/js/main.f266384f.js"
+    "static/js/main.7f26f8b5.js"
   ]
 }
