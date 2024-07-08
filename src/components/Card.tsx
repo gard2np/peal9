@@ -26,12 +26,10 @@ const CardContainer = styled.div<{ flipped: boolean, selected: boolean }>`
   ${(props) =>
     props.flipped &&
     css`
-      background-color: #ffffff;
+      background-color: #ffd700;
       color: #001f3f;
     `}
 `;
-
-
 
 const CardInner = styled.div<{ flipped: boolean }>`
   position: relative;
@@ -65,24 +63,21 @@ const CardFace = styled.div<{ front?: boolean }>`
           color: white;
         `
       : css`
-          background-color: #001f3f;
-          color: #ffd700;
+          background-color: #ffd700;
+          color: #001f3f;
           transform: rotateY(180deg);
         `}
 `;
 
 const Logo = styled.img`
   position: absolute;
-  right: 80px;
-  bottom: 3px;
-  margin-bottom: -20px;
-  width: 120px;
-  height: 120px;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
 `;
 
 const TextContainer = styled.div`
-  position: absolute;
-  top: 10px;
   width: 60%;
   font-weight: bold;
 `;
@@ -95,7 +90,7 @@ const Card: React.FC<CardProps> = ({ text, onClick, flipped, selected }) => {
           <TextContainer>
             {text}
           </TextContainer>
-            {flipped && <Logo src="/logo192.png" alt="logo" />}
+          {flipped && <Logo src={`${process.env.PUBLIC_URL}/logo192.png`} alt="logo" />}
         </CardFace>
       </CardInner>
     </CardContainer>
