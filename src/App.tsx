@@ -93,7 +93,7 @@ const App: React.FC = () => {
     <Router>
       <AppContainer>
         <Header>
-          <h1>필구는 고민해결사</h1>
+          <h1>필구에게 물어보살</h1>
           <Home submitted={submitted} onSubmit={handleSubmit} onReset={handleReset} question={question} />
         </Header>
         <Content>
